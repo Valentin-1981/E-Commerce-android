@@ -4,4 +4,7 @@
     <string name="context_text">Контакты</string>
     <string name="about_text">Про нас</string>
     <string name="main_title_text">Главная</string>
+    <string name="logo_of_app_1">Courses</string>
+    <string name="logo_of_app_2">App</string>
+
 </resources>
