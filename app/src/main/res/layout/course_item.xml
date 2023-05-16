@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/app_name"
                 android:maxWidth="245dp"
+                android:transitionName="courseImage"
                 app:srcCompat="@drawable/java_2" />
 <!--                tools:layout_editor_absoluteX="66dp"-->
 <!--                tools:layout_editor_absoluteY="231dp" -->
