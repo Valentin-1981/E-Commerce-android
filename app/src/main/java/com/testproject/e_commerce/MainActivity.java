@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.testproject.e_commerce.adapter.CategoryAdapter;
 import com.testproject.e_commerce.adapter.CourseAdapter;
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         setCategoryRecycler(categoryList);
 
         courseList.add(new Course(1, "java_2", "Профессия Java\nразработчик", "1 января", "начальный", "#424345", "Test", 3));
-        courseList.add(new Course(2, "python_3", "Профессия Python\nразработчик","10 января", "начальный", "#9FA52D", "Test", 3));
+        courseList.add(new Course(2, "python_1", "Профессия Python\nразработчик","10 января", "начальный", "#9FA52D", "Test", 3));
         courseList.add(new Course(3, "cpp_2", "Профессия C++\nразработчик","15 июня", "начальный", "#E44C30", "Test", 1));
         courseList.add(new Course(4, "unity_1", "Профессия Unity\nразработчик","02 июля", "начальный", "#4476D6", "Test", 2));
         courseList.add(new Course(5, "csharp_1", "Профессия C#\nразработчик","10 июня", "начальный", "#0D0F29", "Test", 2));
@@ -49,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
         fullCoursesList.addAll(courseList);
 
         setCourseRecycler(courseList);
+    }
+
+    public void openShoppingCart(View view){
+        Intent intent = new Intent(this, OrderPage.class);
+        startActivity(intent);
     }
 
     private void setCourseRecycler(List<Course> courseList) {
